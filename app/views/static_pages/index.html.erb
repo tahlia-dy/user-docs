@@ -13,13 +13,28 @@
     <div>
     
     <div id="overview">
-      <h3> Overview </h3>
-    
-      <p>
-      This game has been written entirely in ruby.
-      The tests have been written in Rspec, a testing framework also written in ruby.
-      The program has been built largely with OOP in mind but several structures lend themselves to event-driven
-      and procedural paradigms.
-      It is strongly suggested that the 'User Guide' is looked at and that the game is played before looking over the documentation 
-      </p> 
-</div>
+      <div class="container">
+        <div class="row">
+          <h3> Overview </h3>
+            <p>
+              In order to play this game you must have ruby installed and be able to access the command line.
+              Download the folder that contains the game files and remember where you've put it!
+              In your terminal, direct yourself into that folder.
+            </p> 
+            <div class="img-container">
+              <%= image_tag "command_line_game.png"%>
+            </div>
+            <p> Type in "ruby game.rb" to run the game! </p>
+            <div class="img-container">
+              <%= image_tag "run.png" %>
+            </div>
+            <p> Then follow the on-screen instructions to start the game! </p>
+            <div class="img-container">
+              <%= image_tag "begin.png" %>
+            </div>
+            <div class="img-container">
+              <%= image_tag "intro.png"%>
+            </div>
+        </div>
+      </div>
+    </div>
