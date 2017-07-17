@@ -1,5 +1,10 @@
-<h3> Items </h3>
-<p> All items except for the plastic aeroplane have some kind of effect on the health of the player that they are used on </p>
+<div class="page-header">
+  <h3> Items </h3>
+</div>
+
+<div class="image-container well">
+  <%= image_tag 'item.png' %>
+</div>
 
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
@@ -12,24 +17,11 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-      <h5>effect(player)</h5>
-        Takes one argument: player
-        Increase player health by 50 and puts associated message to screen.
+      <h5>Effect</h5>
+        <p> Can be equiped by only by Tahlia. 
+            When used, will affect player health
+        </p>
       </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <h4>Item</h4>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-      <h5>effect(player)</h5>
-        puts associated message to screen.
     </div>
   </div>
   <div class="panel panel-default">
@@ -42,8 +34,10 @@
     </div>
     <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
-        <h5>effect(player)</h5>
-          Does damage to the player 'Tahlia'
+      <h5>Effect</h5>
+        <p> Can be equiped by only Tahlia.
+            When used, will affect player health.
+        </p>
       </div>
     </div>
   </div>
@@ -58,10 +52,10 @@
     </div>
     <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
-      <h5>effect(player)</h5>
-         Takes one argument: player
-         Increases player health by 20 and puts associated message to screen.
-       
+      <h5>Effect</h5>
+        <p> Can be equiped by either player.
+            When used, will affect player health.
+        </p>
       </div>
     </div>
   </div>
@@ -75,9 +69,10 @@
     </div>
     <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
       <div class="panel-body">
-      <h5>effect(player)</h5>
-         Takes one argument: player
-         Reduces player health by 1 and puts associated message to screen.
+      <h5>Effect</h5>
+        <p> Can be equiped by only by Molly. 
+            When used, will affect player health
+        </p>
       </div>
     </div>
   </div>
@@ -91,9 +86,10 @@
     </div>
     <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
       <div class="panel-body">
-      <h5>effect(player) </h5>
-        Takes one argument: player. 
-        Increases the strength of one of the player weapons by 1 
+      <h5>Effect</h5>
+        <p> Can be equiped by only by Molly. 
+            When used, will affect something special!
+        </p> 
     </div>
   </div>
 

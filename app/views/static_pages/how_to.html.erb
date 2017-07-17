@@ -1,21 +1,32 @@
-<h3> scenes </h3>
+<div class="page-header">
+  <h3> How to... </h3>
+</div>
+<div class="image-container well">
+  <%= image_tag 'how_to.png'%>
+</div>
 
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <h4>ambush</h4>
+          <h4>Select a Player</h4>
         </a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          Takes two arguments: the_player_manager, the_enemy_manager.
+        <h5>Steps</h5>
+         <p> Players can only be selected at the beginning of a new scene and if that player is still alive.
+          You will automatically be told to select a player at the beginning of the scene.
+          To select that player, simply type put their name and press enter.
+          You will be told to select a different player if that player is dead or if you mispelt the name.
+          If this happens, simply repeat the steps above, choosing a different player to the one you originally picked.</p>
+          
+        <div class="image-container well">
+          <%= image_tag 'select_player.png' %>
+        </div>
         
-        <h5>fight(player, player_weapon, enemy, enemy_weapon)</h5>
-          Takes four arguments: player, player_weapon, enemy, enemy_weapon)</h5>
       </div>
     </div>
   </div>
@@ -23,28 +34,41 @@
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <h4>campsite</h4>
+          <h4>Pick Up An Item</h4>
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
+        <h5>Steps</h5>
+        <p> Sometimes when a certain weapon has been used, at the end of the scene you will be offered an item.
+            You will be asked if you want to pick that item up.
+            If you want to pick up the item, simply type yes and press enter.
+        <p>
+        
+        <div class="image-container well">
+          <%= image_tag 'pick_up.png' %>
+        </div>
     </div>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-          <h4>cowfield</h4>
+          <h4>Use An Item</h4>
         </a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
+        <h5>Steps</h5>
+        <p>Items can only be used at the end of a scene. At the end of the scene, you will be shown the backpacks of each player
+           and asked if you'd like to use any of the items in them. If you want to use an item simply type out yes and then press enter.
+           After this you will be asked to select an item. To do this simply type out the name of the item and press enter. </p>
+           
+        <div class="image-container well">
+          <%= image_tag 'use.png' %> 
+        </div>
       </div>
     </div>
   </div>
@@ -53,14 +77,20 @@
     <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-          <h4>death</h4>
+          <h4>Use A Weapon</h4>
         </a>
       </h4>
     </div>
     <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
+        <h5> Steps </h5>
+          <p>You can only use a weapon in certain scenes and at certain times. You will be asked which weapon you would like to choose, the
+             available selection being dependant on your player and if you've used any weapons before. To select a weapon, 
+             simply type out the weapon name and press enter. </p>
+          <div class="image-container well">
+            <%= image_tag 'weapon.png' %>
+          </div>
+
       </div>
     </div>
   </div>
@@ -68,73 +98,21 @@
     <div class="panel-heading" role="tab" id="headingFive">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-          <h4>forest</h4>
+          <h4>Answer a quiz</h4>
         </a>
       </h4>
     </div>
     <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
       <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
+        <h5> Steps</h5>
+          <p>All quizes are multiple choice. To select the answer that you want, simply type out the letter associated with 
+             the answer that you want (A,B, or C) and press enter. </p>
+          
+          <div class="image-container well">
+            <%= image_tag 'quiz.png' %>
+          </div> 
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingSix">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-          <h4>hill</h4>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
-      <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingSeven">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-          <h4>lake</h4>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseSeven" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSeven">
-      <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingEight">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
-          <h4>road</h4>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingEight">
-      <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingNine">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
-          <h4>scene</h4>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingNine">
-      <div class="panel-body">
-        <h5> enter(the_player_manager, the_enemy_manager)</h5>
-          see ambush 
-    </div>
-  </div>
-
 </div>
 
