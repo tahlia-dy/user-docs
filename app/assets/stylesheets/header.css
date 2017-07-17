@@ -1,0 +1,12 @@
+
+h1,h2{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.jumbotron h1,.jumbotron h2 {
+  color: #FDFDFD;
+}
+.jumbotron {
+  background-color: #337AB7 ;
+}

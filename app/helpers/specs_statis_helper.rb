@@ -1,0 +1,2 @@
+module SpecsStatisHelper
+end
