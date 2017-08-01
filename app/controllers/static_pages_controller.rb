@@ -13,4 +13,7 @@ class StaticPagesController < ApplicationController
 
   def how_to
   end
+
+  def google
+  end 
 end

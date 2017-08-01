@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/items', to: 'static_pages#items'
   get '/players', to: 'static_pages#players'
   get '/how_to', to: 'static_pages#how_to'
+  get '/googlebf6e62e2768e3566.html', to: "static_pages#google"
 end
 
 
